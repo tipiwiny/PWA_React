@@ -1,0 +1,12 @@
+{
+  "name": "pwa_react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tipiwiny/PWA_React.git",
+  "author": "Juan Luis Perez <tipiwiny@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
