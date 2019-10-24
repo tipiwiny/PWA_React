@@ -9,7 +9,7 @@ module.exports = {
     __dirname + '/src/index.js'
   ],
   output: {
-    path: __dirname + '/public',
+    path: path.join(__dirname, '/bundle'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -43,6 +43,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     hot: true,
-    inline: true
+    inline: true,
+    historyApiFallback: true
   }
 };

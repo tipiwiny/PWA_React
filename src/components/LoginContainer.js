@@ -16,6 +16,7 @@ class LoginContainer extends Component {
     try {
       if (this.state.email && this.state.password) {
         const res = await Firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+        this.onLogin();
       } else {
         this.setState({error: 'Please fill in both fields.'});
       }
@@ -27,7 +28,9 @@ class LoginContainer extends Component {
       }
     }
   }
-
+  onLogin () {
+    this.props.history.push('/')
+  }
   signup = async() => {
     try {
       await Firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
