@@ -37,7 +37,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin,
     new HtmlWebpackPlugin({
       title: 'My APP',
-      template: __dirname + '/src/index.html'
+      template: __dirname + '/public/index.html'
     })
   ],
   devServer: {

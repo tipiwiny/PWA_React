@@ -61,5 +61,5 @@ typings/
 .next
 
 build
-public
+public/assets
 config/secrets.js
